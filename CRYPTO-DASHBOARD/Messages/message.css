@@ -1,0 +1,10 @@
+body {
+    grid-template-columns: 17rem auto;
+}
+
+.main__header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100vh;
+}

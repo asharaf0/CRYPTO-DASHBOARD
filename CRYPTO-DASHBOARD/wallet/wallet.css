@@ -1,0 +1,131 @@
+body {
+    grid-template-columns: 17rem auto;
+}
+
+.wallet {
+    margin-top: 8rem;
+    margin-right: 2vw;
+}
+
+.wallet__balance {
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+
+.wallet__balance h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-inline: auto;
+    width: fit-content;
+}
+
+.wallet__balance h1 {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.wallet__cta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.wallet__cta a {
+    color: var(--color-white);
+}
+
+.wallet__cta a i {
+    background: var(--color-primary);
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.wallet__cta a p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    color: var(--color-dark);
+}
+
+.wallet__tokens {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+}
+
+.wallet__token {
+    background: var(--color-white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet__token-left {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.wallet__token-image {
+    width: 3rem;
+    height: 3rem;
+}
+
+.wallet__token-left > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.wallet__token-left div div {
+    display: flex;
+    flex-direction: center;
+    gap: 1.2rem;
+}
+
+.wallet__token-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+
+
+
+
+
+/*================================ MEDIA QUERIES (TABLETS)  =============================== */
+@media screen and (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .wallet {
+        padding: 2vw;
+    }
+}
+
+
+
+
+/*================================ MEDIA QUERIES (PHONES)  =============================== */
+
+
+@media screen and (max-width: 600px) {
+    .wallet__tokens {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

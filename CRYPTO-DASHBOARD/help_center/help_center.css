@@ -1,0 +1,120 @@
+:root {
+    --color-primary: #156bd4;
+    --color-primary-variant: rgba(21, 107, 212, 0.5);
+    --color-gray-0: #fff;
+    --color-gray-50: #edecec;
+    --color-gray-100: #e6e5e5;
+    --color-gray-200: #c0c0c0;
+    --color-gray-300: #a1a1a1;
+    --color-gray-400: #919191;
+    --color-gray-500: #7b7b7b;
+    --color-gray-600: #545454;
+    --color-gray-700: #313131;
+    --color-gray-800: #1f1f1f;
+    --color-gray-900:#0e0e0e;
+
+    --container-w-lg: 74%;
+    --container-w-sm: 94%;
+
+    --transition: all 350ms ease; 
+}
+
+.btn {
+    background: var(--color-gray-0);
+    border: 2px solid var(--color-gray-100);
+    color: var(--color-gray-900);
+    font-weight: 500;
+    padding: 0.8rem 1.7rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.btn:hover{
+    background: var(--color-primary-variant);
+    border-color: transparent;
+}
+
+
+
+
+/************************ CONTACT ******************* */
+.contact__container {
+    width: 36%;
+}
+
+
+
+.contact__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    gap: 1.2rem;
+    margin-bottom: 5rem;
+}
+
+
+.contact__options a {
+    background: var(--color-gray-0);
+    color: var(--color-primary);
+    padding: 1.2rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+
+.contact__options a:hover {
+    background: var(--color-primary-variant);
+    color: var(--color-gray-900);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+form input, form textarea {
+    padding: 1.2rem;
+    resize: none;
+    background: var(--color-gray-0);
+    color: var(--color-gray-900);
+}
+
+form button {
+    width: fit-content;
+    border: 0;
+    padding: 0.8rem 2rem;
+}
+
+
+.form .btn.primary {
+    display: block;
+    width: 20%;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-1);
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+
+#contact{
+    margin-top:100px;
+}
+
+
+
